@@ -9,11 +9,16 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
+    <properties>
+        <javaee-api.version>7.0-1</javaee-api.version>
+        <tomee.version>7.0.2</tomee.version>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.apache.tomee</groupId>
             <artifactId>javaee-api</artifactId>
-            <version>7.0-1</version>
+            <version>${javaee-api.version}</version>
         </dependency>
     </dependencies>
 
@@ -29,7 +34,7 @@
             <plugin>
                 <groupId>org.apache.tomee.maven</groupId>
                 <artifactId>tomee-maven-plugin</artifactId>
-                <version>7.0.2</version>
+                <version>${tomee.version}</version>
                 <configuration>
                     <tomeeClassifier>webprofile</tomeeClassifier>
                 </configuration>
