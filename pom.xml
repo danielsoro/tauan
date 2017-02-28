@@ -16,6 +16,7 @@
 
         <javaee-api.version>7.0-1</javaee-api.version>
         <tomee.version>7.0.2</tomee.version>
+        <tomee.classifier>webprofile</tomee.classifier>
     </properties>
 
     <dependencies>
@@ -40,7 +41,7 @@
                 <artifactId>tomee-maven-plugin</artifactId>
                 <version>${tomee.version}</version>
                 <configuration>
-                    <tomeeClassifier>webprofile</tomeeClassifier>
+                    <tomeeClassifier>${tomee.classifier}</tomeeClassifier>
                 </configuration>
             </plugin>
         </plugins>
