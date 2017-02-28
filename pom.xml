@@ -24,6 +24,7 @@
             <groupId>org.apache.tomee</groupId>
             <artifactId>javaee-api</artifactId>
             <version>${javaee-api.version}</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 
